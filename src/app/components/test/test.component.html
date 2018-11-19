@@ -1,0 +1,78 @@
+<div class="page-header header-filter clear-filters" data-parallax="true" style="background-image: url('./assets/img/carrera.jpg');">
+  
+ 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+              <div class="col-md-10">
+                  <br>
+                  <br>
+              <h3 class="title">Este es el test de orientación vocacional general. No importa la edad que tengas, este test vocacional es válido tanto para adolescentes como para adultos.
+
+                </h3>
+              
+              <p class="title">
+                    El proceso es sencillo. Responde a todas las preguntas de este test vocacional en línea y pincha en "Finalizar" para saber el resultado. 
+              </p> 
+  
+              
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="main main-raised">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                     <form>
+                          <div class="form-group" *ngFor="let pregunta of preguntas">
+                             <label for="preguntas"> {{ pregunta.pregunta}}  </label>
+                             <select class="form-control selectpicker" data-style="btn btn-link" id="exampleFormControlSelect1">
+                              <option></option>
+                                <option>{{ pregunta.respuesta1}}</option>
+                              <option>{{ pregunta.respuesta2}}</option>
+                              <option>{{ pregunta.respuesta3}}</option>
+            
+                             </select>
+                            </div>
+                     </form>
+                 </div>
+             </div>
+             <br>
+             <div class="col-md-8 ml-auto mr-auto">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            ver resultados
+                    </button>
+             </div>
+             <br><br><br>
+        </div>
+    </div>
+       
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Resultados</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>¡Enhorabuena! Destacas mucho en Ciencias Exactas y en Ingenierías. Comienza a definir tus metas. No descartes tampoco Arte, Arquitectura y Diseño porque tienes mucho potencial en este campo.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                      <button type="button" class="btn btn-primary">enviar resultados por correo</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      

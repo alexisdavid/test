@@ -8,6 +8,11 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { TestComponent } from './components/test/test.component';
+
+import { AuthService } from './services/auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
+import { TestVocService } from './services/test-voc.service';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,18 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuardService,
+    TestVocService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
