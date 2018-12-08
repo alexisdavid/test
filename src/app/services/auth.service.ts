@@ -15,7 +15,7 @@ export class AuthService {
     clientID: 'vkQU8ZwYtu7pOFJJGLI2ngvMXHtnAiGh',
     domain: 'alex1512.auth0.com',
     responseType: 'token id_token',
-    redirectUri: 'http://localhost:4200/callback',
+    redirectUri: 'http://www.tuwebjs.com',
     scope: 'openid profile'
   });
 
